@@ -1,0 +1,67 @@
+@import url(//fonts.googleapis.com/css?family=Roboto:400,700,500,300);
+html, body {
+	min-width:300px;
+	height:auto;
+	background:transparent;
+}
+
+body {
+	overflow:hidden;
+}
+#search-results{
+	padding:0 10px 0px 5px;
+	overflow:hidden;
+}
+
+#search-results iframe html{
+	border:none;
+}
+#search-results iframe {
+	min-width:300px;
+}
+
+h4{
+	padding-bottom: 10px;
+	margin: 0;
+}
+ol.search_list {
+	margin-left: 0;
+    padding-left: 10px;
+	list-style-type:none;
+	counter-reset: ol;
+}
+ol.search_list li:before {
+content: counter(ol) ".";
+counter-increment: ol;
+float:left;
+display:block;
+width:20px;
+text-align:right;	
+padding-right:10px;
+margin:0px 0px 0 -30px
+}
+ol.search_list li {
+	padding-bottom:40px;
+	margin-left:15px;
+}
+span.match {
+	color:#99cc00;
+	display:block;
+	font-weight:bold;
+}
+span.search {
+	color:#99cc00;
+
+}
+.search_link{
+    font:bold 20px/20px 'Roboto';
+    color:#2d2d30;
+    position:relative;
+    top:-4px;
+	text-decoration: underline;
+}
+.search_link:hover{
+    color:#99cc00;
+	text-decoration: none;
+}
+
